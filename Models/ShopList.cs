@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLiteNetExtensions.Attributes;
+
+
+
 
 namespace PopVladLab7.Models
 {
@@ -14,6 +18,8 @@ namespace PopVladLab7.Models
         [MaxLength(250), Unique]
         public string Description { get; set; }
         public DateTime Date { get; set; }
+        [ForeignKey(typeof(Shop))]
+        public int ShopID { get; set; }
     }
 
 }
