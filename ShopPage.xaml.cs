@@ -26,7 +26,6 @@ public partial class ShopPage : ContentPage
             Name = "Magazinul meupreferat" };
         
         var shoplocation= new Location(46.7492379, 23.5745597);
-
         var myLocation = new Location(46.7731796289, 23.6213886738);
 
         var distance = myLocation.CalculateDistance(shoplocation,
